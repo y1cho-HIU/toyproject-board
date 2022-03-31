@@ -1,13 +1,8 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
 <head>
     <meta charset="utf-8">
-    <link href="../css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
-    <style>
-        .container {
-            max-width: 560px;
-        }
-    </style>
+    <title>ADDFORM</title>
 </head>
 <body>
 <div class="container">
@@ -15,7 +10,7 @@
         <h2>글 작성하기</h2>
     </div>
     <h4 class="mb-3">내용 입력</h4>
-    <form action="item.html" th:action method="post">
+    <form action="entity.html" th:action method="post">
         <div>
             <label for="title">글 제목</label>
             <input type="text" id="title" name="title" class="formcontrol" placeholder="제목을 입력하세요">
