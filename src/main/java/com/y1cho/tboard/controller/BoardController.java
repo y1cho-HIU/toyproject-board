@@ -43,7 +43,7 @@ public class BoardController {
     @PostMapping("/add")
     public String addBoard(Board board){
         boardRepository.save(board);
-        return "/board/list";
+        return "redirect:/board/list";
     }
 
     @GetMapping("/{boardId}/edit")
