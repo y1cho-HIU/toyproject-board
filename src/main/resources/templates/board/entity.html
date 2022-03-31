@@ -28,7 +28,7 @@
     <hr class="my-4">
     <div class="row">
         <div class="col">
-            <button class="w-100 btn btn-primary btn-lg" onclick="location.href='editForm.html'" th:onclick="|location.href='@{/board/list/{boardId}/edit(boardId=${board.id})}'|" type="button">글 수정</button>
+            <button class="w-100 btn btn-primary btn-lg" onclick="location.href='editForm.html'" th:onclick="|location.href='@{/board/{boardId}/edit(boardId=${board.id})}'|" type="button">글 수정</button>
         </div>
         <div class="row">
             <button class="w-100 btn btn-primary btn-lg" onclick="location.href='list.html'" th:onclick="|location.href='@{/board/list}'|" type="button">삭제하기</button>
