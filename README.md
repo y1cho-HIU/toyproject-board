@@ -1,6 +1,6 @@
 # TITLE : TOY PROJECT BOARD
 - ## USED TECH STACK (JAVA11)
-  - ### SPRING BOOT VER:2.6.4 <img src="https://img.
+  - ### SPRING BOOT VER:2.6.4
     - #### WEB 
     - #### JPA
     - #### THYMELEAF
