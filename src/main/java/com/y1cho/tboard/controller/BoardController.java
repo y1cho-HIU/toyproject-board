@@ -25,23 +25,24 @@ public class BoardController {
     public String list(Model model){
         List<Board> boardList = boardRepository.findAll();
         model.addAttribute("boards", boardList);
-        return "/board/list";
+        return "/board/newList";
     }
 
     @GetMapping("/entity/{boardId}")
     public String board(@PathVariable Long boardId, Model model){
         Board board = boardRepository.getById(boardId);
         model.addAttribute("board", board);
-        return "/board/entity";
+        return "/board/newEntity";
     }
 
     @GetMapping("/add")
     public String addForm(){
-        return "/board/addForm";
+        return "/board/newAddForm";
     }
 
     @PostMapping("/add")
     public String addBoard(Board board){
+        System.out.println("ADDED");
         boardRepository.save(board);
         return "redirect:/board/list";
     }
@@ -50,12 +51,19 @@ public class BoardController {
     public String editForm(@PathVariable Long boardId, Model model){
         Board board = boardRepository.getById(boardId);
         model.addAttribute("board", board);
-        return "/board/editForm";
+        return "/board/newEditForm";
     }
 
     @PostMapping("/{boardId}/edit")
     public String editBoard(@PathVariable Long boardId, @ModelAttribute Board board){
         boardService.update(boardId, board);
         return "redirect:/board/entity/{boardId}";
+    }
+
+    @GetMapping("/{boardId}/delete")
+    public String deleteBoard(@PathVariable Long boardId){
+        //boardService.delete(boardId);
+        boardRepository.deleteById(boardId);
+        return "redirect:/board/list";
     }
 }

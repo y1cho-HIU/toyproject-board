@@ -17,4 +17,8 @@ public class BoardService {
         boardRepository.save(findBoard);
     }
 
+    public void delete(Long id){
+        boardRepository.deleteById(id);
+    }
+
 }
