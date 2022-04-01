@@ -1,6 +1,6 @@
 # TITLE : TOY PROJECT BOARD
 - ## USED TECH STACK (JAVA11)
-  - ### SPRING BOOT VER:2.6.4
+  - ### SPRING BOOT VER:2.6.4 <img src="https://img.
     - #### WEB 
     - #### JPA
     - #### THYMELEAF
@@ -15,7 +15,13 @@
     - #### ~~editForm.html~~ -> newEditForm.html
     - #### ~~entity.html~~ -> newEntity.html
     - #### ~~list.html~~ -> newList.html
-  + ##### > CREATED-TIME/UPDATED-TIME & HIT SYSTEM (TO BE ADDED)
-  + ##### > USER INFO. (TO BE ADDED)
-  + ##### > BOARD ENTITY, USER ENTITY JOIN (TO BE ADDED)
+  + ##### CREATED-TIME/UPDATED-TIME & HIT SYSTEM (TO BE ADDED)
+  + ##### USER INFO. (TO BE ADDED)
+  + ##### BOARD ENTITY, USER ENTITY JOIN (TO BE ADDED)
 
+* * *
+YOU HAVE TO CHANGE 
+  - **APPLICATION.PROPERTIES**
+    - spring.datasource.url
+    - spirng.datasource.username
+    - spring.datasource.password
