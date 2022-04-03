@@ -15,7 +15,7 @@
     - #### ~~editForm.html~~ -> newEditForm.html
     - #### ~~entity.html~~ -> newEntity.html
     - #### ~~list.html~~ -> newList.html
-  + ##### CREATED-TIME/UPDATED-TIME & HIT SYSTEM (TO BE ADDED)
+  + ### CREATED-TIME/UPDATED-TIME & HIT SYSTEM (added in 2022.04.03)
   + ##### USER INFO. (TO BE ADDED)
   + ##### BOARD ENTITY, USER ENTITY JOIN (TO BE ADDED)
 
