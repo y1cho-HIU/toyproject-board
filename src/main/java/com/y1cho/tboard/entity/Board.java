@@ -1,12 +1,16 @@
 package com.y1cho.tboard.entity;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 import java.util.Date;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Getter
 @Entity
-@Data
 public class Board {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,15 +25,10 @@ public class Board {
     @Column(nullable = false)
     private String writer;
 
-/*    @Column(nullable = false)
-    private Date createdTime;
+    private LocalDateTime createdTime;
 
-    @Column(nullable = false)
-    private Date updatedTime;
+    private LocalDateTime updatedTime;
 
-    @Column(nullable = false)
-    private Integer hit_num;*/
+    private Long Hit_Count;
 
-    public Board(){
-    }
 }
